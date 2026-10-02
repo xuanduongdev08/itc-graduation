@@ -222,51 +222,53 @@ export function Preloader({ onComplete, className }: PreloaderProps) {
     <div
       ref={loaderRef}
       className={cn(
-        'fixed inset-0 z-50 coi-grid items-end overflow-hidden',
+        'fixed inset-0 z-50 coi-grid items-center dt:items-end overflow-hidden',
         'bg-primary text-secondary',
         className
       )}
       style={{ opacity: 1 }}
     >
       <div className="texture" />
-      <div
-        className={cn('relative will-change-transform', s.countWrapper)}
-        data-preloader-count-wrapper
-      >
+      <div className="col-span-full flex justify-center dt:contents">
         <div
-          className={cn('relative flex w-full will-change-transform', s.count)}
-          data-preloader-count
+          className={cn('relative will-change-transform', s.countWrapper)}
+          data-preloader-count-wrapper
         >
-          {digits.map((digit, idx) => (
-            <div
-              key={`digit-first-${idx}-${digit}`}
-              className={cn('relative shrink-0', s.digit)}
-            >
-              <h1 className="absolute left-1/2 top-1/2 m-0 w-max -translate-x-1/2 -translate-y-1/2 leading-none">
-                {digit}
-              </h1>
-            </div>
-          ))}
+          <div
+            className={cn('relative flex w-full will-change-transform', s.count)}
+            data-preloader-count
+          >
+            {digits.map((digit, idx) => (
+              <div
+                key={`digit-first-${idx}-${digit}`}
+                className={cn('relative shrink-0', s.digit)}
+              >
+                <h1 className="absolute left-1/2 top-1/2 m-0 w-max -translate-x-1/2 -translate-y-1/2 leading-none">
+                  {digit}
+                </h1>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-      <div
-        className={cn('relative will-change-transform', s.countWrapper)}
-        data-preloader-count-wrapper
-      >
         <div
-          className={cn('relative flex w-full will-change-transform', s.count)}
-          data-preloader-count
+          className={cn('relative will-change-transform', s.countWrapper)}
+          data-preloader-count-wrapper
         >
-          {[9, 7, 9, 8, 0, 6].map((digit, idx) => (
-            <div
-              key={`digit-second-${idx}-${digit}`}
-              className={cn('relative shrink-0', s.digit)}
-            >
-              <h1 className="absolute left-1/2 top-1/2 m-0 w-max -translate-x-1/2 -translate-y-1/2 leading-none">
-                {digit}
-              </h1>
-            </div>
-          ))}
+          <div
+            className={cn('relative flex w-full will-change-transform', s.count)}
+            data-preloader-count
+          >
+            {[9, 7, 9, 8, 0, 6].map((digit, idx) => (
+              <div
+                key={`digit-second-${idx}-${digit}`}
+                className={cn('relative shrink-0', s.digit)}
+              >
+                <h1 className="absolute left-1/2 top-1/2 m-0 w-max -translate-x-1/2 -translate-y-1/2 leading-none">
+                  {digit}
+                </h1>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
       {revealerColors.map((color) => (

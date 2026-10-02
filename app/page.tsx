@@ -184,7 +184,7 @@ export default function Home() {
             >
               From{' '}
               <span className="bg-contrast text-primary coi-px-12 coi-rounded-10">
-                9:00 - 10:30
+                8:00 - 9:00
               </span>
             </RotateRevealText>
             <RotateRevealText
@@ -193,7 +193,7 @@ export default function Home() {
             >
               TO{' '}
               <span className="bg-contrast text-primary coi-px-12 coi-rounded-10">
-                13:30 - 15:00
+                10:00 - 11:30
               </span>
             </RotateRevealText>
             <RotateRevealText
