@@ -36,7 +36,7 @@ const CONTACT_LINKS = [
   },
 ] as const
 
-const TARGET_DATE = new Date('2026-11-21T09:00:00+07:00')
+const TARGET_DATE = new Date('2026-10-22T09:00:00+07:00')
 
 export default function Home() {
   const [isPreloaderComplete, setIsPreloaderComplete] = useState(false)
@@ -162,7 +162,7 @@ export default function Home() {
         <div className="col-span-full dt:coi-ml-20 coi-ml-0 dt:col-start-4 dt:col-span-5 coi-mt-30 order-1 dt:order-0">
           <div>
             <Image
-              src="/SE170317-4.png"
+              src="/SE170317-5.png"
               alt="Graduation Center"
               className="w-full border-solid coi-border-px border-secondary"
               aspectRatio={47 / 32}

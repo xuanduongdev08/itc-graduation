@@ -257,7 +257,7 @@ export function Preloader({ onComplete, className }: PreloaderProps) {
           className={cn('relative flex w-full will-change-transform', s.count)}
           data-preloader-count
         >
-          {[9, 7, 9, 6, 1, 7].map((digit, idx) => (
+          {[9, 7, 9, 8, 0, 6].map((digit, idx) => (
             <div
               key={`digit-second-${idx}-${digit}`}
               className={cn('relative shrink-0', s.digit)}
