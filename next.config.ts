@@ -19,11 +19,12 @@ const nextConfig: NextConfig = {
   },
   cacheComponents: true,
   compress: true,
+  logging: {
+    browserToTerminal: true,
+  },
   experimental: {
     turbopackFileSystemCacheForDev: true,
-    clientSegmentCache: true,
     taint: true,
-    browserDebugInfoInTerminal: true,
     optimizePackageImports: ['lenis'],
   },
   devIndicators: false,
