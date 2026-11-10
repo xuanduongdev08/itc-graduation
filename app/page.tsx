@@ -36,7 +36,7 @@ const CONTACT_LINKS = [
   },
 ] as const
 
-const TARGET_DATE = new Date('2026-10-22T09:00:00+07:00')
+const TARGET_DATE = new Date('2026-11-18T09:00:00+07:00')
 
 export default function Home() {
   const [isPreloaderComplete, setIsPreloaderComplete] = useState(false)
