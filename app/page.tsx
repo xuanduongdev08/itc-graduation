@@ -176,7 +176,7 @@ export default function Home() {
               as="h2"
               className="text-secondary coi-pt-30 dt:coi-pt-50 uppercase h1"
             >
-              Friday, Oct 16, 2026
+              Wednesday, Nov 18, 2026
             </RotateRevealText>
             <RotateRevealText
               as="h2"
@@ -184,7 +184,7 @@ export default function Home() {
             >
               From{' '}
               <span className="bg-contrast text-primary coi-px-12 coi-rounded-10">
-                8:00 - 9:00
+                9:00 - 9:30
               </span>
             </RotateRevealText>
             <RotateRevealText
@@ -193,7 +193,7 @@ export default function Home() {
             >
               TO{' '}
               <span className="bg-contrast text-primary coi-px-12 coi-rounded-10">
-                10:00 - 11:30
+                10:00 - 10:30
               </span>
             </RotateRevealText>
             <RotateRevealText
